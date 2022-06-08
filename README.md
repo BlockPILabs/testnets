@@ -12,8 +12,8 @@ discord: https://discord.gg/xTvGVrGVZv
 
 
 ## Testnet
-* Testnet name: πestnet
-* Testnet Documentation: [public network](πestnet/public-testnet/README.md)
+* Testnet name: testnet
+* Testnet Documentation: [public network](testnet/public-testnet/README.md)
 
 
 *This document has not been written yet, please be patient*
