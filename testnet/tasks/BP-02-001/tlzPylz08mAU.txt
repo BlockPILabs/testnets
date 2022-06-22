@@ -1,1 +1,1 @@
-https://github.com/BlockPILabs/testnets/blob/main/testnet/tasks/BP-02-001/example.json
+https://docs.google.com/document/d/1cijGUMYnDLoGHdqfoC2GIfpfeKn_DBYnhEbqeGqQHJ0/edit
