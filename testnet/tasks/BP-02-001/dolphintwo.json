@@ -1,0 +1,14 @@
+{
+    "provider": "0x998659bBad29fDF12c79CeFd647f9841479B7cF1",
+    "methods": [{
+            "id": 1,
+            "name": "klaytn simple check and alert",
+            "url": "https://github.com/dolphintwo/testnets-3/blob/monitor/testnet/tasks/BP-02-001/Klaytn-simple_monitor.md"
+        },
+        {
+            "id": 2,
+            "name": "grafana for all service",
+            "url": "https://github.com/dolphintwo/testnets-3/blob/monitor/testnet/tasks/BP-02-001/Hypernode-monitor.md"
+        }
+    ]
+}
