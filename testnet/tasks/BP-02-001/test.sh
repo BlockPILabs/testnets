@@ -48,14 +48,14 @@ function getJsonValuesByAwk() {
     }'
 }
 
-#HTTP RPC接口请求  method klay_syncing 当节点同步时返回结果正常，当节点不在同步时，返回的result = false
+#HTTP RPC接口请求  method klay_syncing 当节点正常时返回false,掉块不正常时，result会显示当前块以及最新块的数据
 json=$(curl -H "Content-Type: application/json" --data '{"jsonrpc":"2.0","method":"klay_syncing","params":[],"id":1}' http://134.119.192.13:8551)
-#解析json中的result字段,如果不正常了则删除false
+#解析json中的result字段,如果正常同步会显示false
 RESULT=getJsonValuesByAwk "$json" "result" "defaultValue"
 if [ $RESULT ]
 then
-    echo success 
-else 
     #之后可以通过邮箱发送节点挂掉的通知
-    echo false
+    echo error 
+else 
+    echo success
 fi
