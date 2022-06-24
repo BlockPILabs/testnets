@@ -1,6 +1,7 @@
 # Monitoring HyperNode status
 
-One Paragraph of project description goes here
+The default monitoring port is 8899. Visit P:8899/metrics to get the status of Prometheus metrics.
+Here is the Grafana dashboard file of HyperNode:
 
 ## Getting Started
 
