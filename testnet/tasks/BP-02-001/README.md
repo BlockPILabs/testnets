@@ -56,9 +56,7 @@ groups:
 The Prometheus Node Exporter is used as the monitor system. Configured with Grafana dashboard, it is able to record the statue history of CPU, RAM, hard disc, and the network. 
 Here is the Grafana dashboard developed by the community: https://grafana.com/grafana/dashboards/1860
 
-```
-![image](https://user-images.githubusercontent.com/45475895/175549570-1c2e4f63-7e5c-4d00-a066-fa500f220dd6.png)
-```
+![image](https://user-images.githubusercontent.com/45475895/175549641-19287aad-476c-4c9e-afef-f1c463fc313d.png)
 
 ## Deployment
 
