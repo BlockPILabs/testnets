@@ -2,40 +2,31 @@
 
 The default monitoring port is 8899. Visit P:8899/metrics to get the status of Prometheus metrics.
 Here is the Grafana dashboard file of HyperNode:
+https://github.com/qinyh1990/csharpnet/blob/main/testnet/tasks/BP-02-001/HyperNode.json
+## Grafana Download
 
-## Getting Started
+https://grafana.com/grafana/download?pg=get&plcmt=selfmanaged-box1-cta1
 
-These instructions will get you a copy of the project up and running on your local machine for development and testing purposes. See deployment for notes on how to deploy the project on a live system.
+### Promthues Download
 
-### Prerequisites
+https://github.com/prometheus/prometheus/releases
 
-What things you need to install the software and how to install them
 
-```
-Give examples
-```
 
-### Installing
+### Promthues configurations
 
-A step by step series of examples that tell you how to get a development env running
+The class: HyperNodeis related to the class="HyperNode" in Alertmanager. They should be kept the same. 
 
-Say what the step will be
+- labels:
+    class: HyperNode
+    name: aws-hypernode-1
+    region: Tokyo
+    service_provider: aws
+  targets:
+  - ip:8899
 
-```
-Give the example
-```
+![image](https://user-images.githubusercontent.com/45475895/175547944-b9bf44f2-818d-4908-91b0-37d2e3af1c06.png)
 
-And repeat
-
-```
-until finished
-```
-
-End with an example of getting some data out of the system or using it for a little demo
-
-## Running the tests
-
-Explain how to run the automated tests for this system
 
 ### Break down into end to end tests
 
