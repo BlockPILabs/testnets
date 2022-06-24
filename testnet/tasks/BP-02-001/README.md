@@ -51,12 +51,13 @@ groups:
         id: "{{ $labels.instanceid }}"
 ```
 
-### And coding style tests
+# Monitoring system status
 
-Explain what these tests test and why
+The Prometheus Node Exporter is used as the monitor system. Configured with Grafana dashboard, it is able to record the statue history of CPU, RAM, hard disc, and the network. 
+Here is the Grafana dashboard developed by the community: https://grafana.com/grafana/dashboards/1860
 
 ```
-Give an example
+![image](https://user-images.githubusercontent.com/45475895/175549570-1c2e4f63-7e5c-4d00-a066-fa500f220dd6.png)
 ```
 
 ## Deployment
