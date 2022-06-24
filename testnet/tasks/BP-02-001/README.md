@@ -17,6 +17,7 @@ https://github.com/prometheus/prometheus/releases
 
 The class: HyperNodeis related to the class="HyperNode" in Alertmanager. They should be kept the same. 
 
+```bash
 - labels:
     class: HyperNode
     name: aws-hypernode-1
@@ -24,16 +25,30 @@ The class: HyperNodeis related to the class="HyperNode" in Alertmanager. They sh
     service_provider: aws
   targets:
   - ip:8899
+```
 
 ![image](https://user-images.githubusercontent.com/45475895/175547944-b9bf44f2-818d-4908-91b0-37d2e3af1c06.png)
 
 
-### Break down into end to end tests
+### Alertmanager alert rule configurations
 
 Explain what these tests test and why
 
 ```
-Give an example
+groups:
+  - name: HyperNode-node-alert
+    rules:
+    - alert: HyperNode-node-down
+      expr: up{class="HyperNode"} == 0
+      for: 1m
+      labels:
+        severity: warn
+      annotations: 
+        summary: "HyperNode not responding"  
+        description: "- instance: {{ $labels.instance }} \n- name: {{ $labels.name }} HyperNode keeps not responding more than 1 min" 
+        value: "{{ $value }}"
+        instance: "{{ $labels.instance }}"
+        id: "{{ $labels.instanceid }}"
 ```
 
 ### And coding style tests
