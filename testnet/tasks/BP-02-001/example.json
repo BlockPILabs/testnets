@@ -1,3 +1,17 @@
-{
-    "provider": "erc20"
-}
+通过 http://testnet.explorer.blockpi.io/provider自带的接口进行请求
+
+curl 'http://testnet.explorer.blockpi.io/v1/rpc' \
+  -H 'Accept: application/json, text/plain, */*' \
+  -H 'Accept-Language: zh-CN,zh;q=0.9' \
+  -H 'Connection: keep-alive' \
+  -H 'Content-Type: application/json' \
+  -H 'Referer: http://testnet.explorer.blockpi.io/provider' \
+  -H 'User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/102.0.0.0 Safari/537.36' \
+  --data-raw '{"method":"explorer_getHypernodesDetail","params":[{"provider":"your provider","perPage":20,"page":1,"sort":"status","order":"asc"}],"id":1}' \
+  --compressed \
+  --insecure
+
+
+  修改provider 地址，返回结果如下
+  {"jsonrpc":"2.0","id":1,"result":{"hypernodes":[{"name":"","providerName":"","provider":"","nodeId":"","host":"134.*.*.235","port":0,"compatibleBase":"eth","chain":"klaytn","chainName":"Klaytn","network":"mainnet","networkId":"8217","client":"klaytn","version":"v1.8.3","mode":"full","status":"active","nodeStatus":"working","type":"hypernode","location":"FR","score":980,"lastSeen":1656055123768,"createdAt":1652701140732,"updatedAt":1656055140490,"stats":{"requests":41440901,"requestsFailed":0,"ru":1465834050,"ru2":1465834050,"tickets":1527900,"sr":0,"mrt":0,"score":937,"throughput":0,"trafficRate":2576515,"traffic":222610932606,"rewardsUSD":"0.00004896426915729761833","rewardsBPI":"0","pendingRewardsUSD":"0.00004453426915729761833","pendingRewardsBPI":"0"}}],"totalCount":1,"perPage":20,"page":1}}
+  其中status 值若为“active”则正常
