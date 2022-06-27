@@ -1,6 +1,6 @@
 ### blockpi节点监控部署
 
-> 所需软件：[Zabbix](https://www.zabbix.com/)
+> 所需软件：[Zabbix](https://www.zabbix.com/)、[Python3](https://www.python.org/downloads/)
 
 #### 1、脚本
 
