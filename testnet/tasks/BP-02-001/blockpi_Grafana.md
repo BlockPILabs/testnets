@@ -1,0 +1,5 @@
+blockpi节点Grafana监控出图
+
+具体文件参考
+
+选中blockpi节点主机
