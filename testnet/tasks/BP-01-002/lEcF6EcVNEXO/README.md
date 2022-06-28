@@ -1,0 +1,1 @@
+https://scope.klaytn.com/tx/0xd817d9681824d33bfbc44134cf3e6700c1e92e89db95e3ac7ac0bbe953ec82c1
