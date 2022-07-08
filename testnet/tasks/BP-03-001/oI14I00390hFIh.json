@@ -1,0 +1,5 @@
+{
+    "uid": "oI14I00390hFIh",
+    "error":{"code":-32000,"message":"Insufficient RU balance"},
+    "info": "occured when at 335 request with method eth_syncing"
+}
