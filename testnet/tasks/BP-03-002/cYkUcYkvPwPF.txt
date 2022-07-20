@@ -1,0 +1,20 @@
+    Method                      Number        RU price
+
+1.klay_blockNumber              1             10      
+2.klay_getBalance               1             15
+3.klay_getCode                  1             15
+4.klay_getAccount               1             20
+5.klay_getLogs                  3             225
+6.klay_gasPrice                 1             15
+7.klay_clientVersion            1             15
+8.klay_getTransactionByHash     1             35
+9.klay_getTransactionCount      1             15
+10.klay_estimateGas             1             20
+11.klay_getTransactionReceipt   1             200
+
+
+
+                                       totoal:585
+
+
+手动记录结果和网站上的RU统计结果一致，未发现问题                                   

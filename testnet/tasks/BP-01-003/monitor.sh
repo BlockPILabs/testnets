@@ -1,0 +1,1 @@
+curl --data '{"method":"eth_syncing","params”:[],"id":1,"jsonrpc":"2.0"}' -H "Content-Type: application/json" -X POST https://bschub.maiziqianbao.net

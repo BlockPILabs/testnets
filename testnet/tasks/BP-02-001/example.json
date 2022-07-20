@@ -1,3 +1,15 @@
 {
-    "provider": "erc20"
+    "provider": "0x6Bfe3A12Dc7D4C380477d4f0DC55BD9E2E74Db6a",
+    "uid":"lEcB3lcWL",
+    "methods": [
+        {
+            "klay_syncing":"见test.sh",
+            "desc":"通过此方法监控节点是否正在同步"
+        },
+        {
+            "klay_blockNumber":"见test1.sh",
+            "desc":"通过此方法监控节点是否掉块"
+        }
+    ],
+    "implement":"编写shell脚本，监控节点是否同步以及节点是否掉块，再通过crontab命令，开启定时器轮询，如果出现异常，则发送邮件通知。"    
 }
