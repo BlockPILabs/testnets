@@ -1,11 +1,11 @@
 {
  "uid":"oI14I003D097ch",
- "Total request number":"8",
-  "RU consumption on web":"330",
-  "RU consumption calculated":"340",
+ "Total request number":"10",
+  "RU consumption on web":"360",
+  "RU consumption calculated":"370",
 }
 
-//curl request content 25+15+15+15+15+25+50+170=340
+//curl request content 25+15+15+15+15+25+50+170+15+15=370
 /** 
 curl -H "Content-Type: application/json" --data '{"jsonrpc":"2.0","method":"klay_getHeaderByNumber","params":["0x1b4"],"id":1}' https://klaytn.testnet.blockpi.net/v1/rpc/e3541a82689c876a1576c1d627aa94453d2e96ed
 curl -H "Content-Type: application/json" --data '{"jsonrpc":"2.0","method":"klay_clientVersion","id":1}' https://klaytn.testnet.blockpi.net/v1/rpc/e3541a82689c876a1576c1d627aa94453d2e96ed
@@ -15,4 +15,6 @@ curl -H "Content-Type: application/json" --data '{"jsonrpc":"2.0","method":"klay
 curl -H "Content-Type: application/json" --data '{"jsonrpc":"2.0","method":"klay_getHeaderByNumber","params":["0x1b4"],"id":1}' https://klaytn.testnet.blockpi.net/v1/rpc/e3541a82689c876a1576c1d627aa94453d2e96ed
 curl -H "Content-Type: application/json" --data '{"jsonrpc":"2.0","method":"klay_getBlockByNumber","params":["0x1b4", true],"id":1}' https://klaytn.testnet.blockpi.net/v1/rpc/e3541a82689c876a1576c1d627aa94453d2e96ed
 curl -X POST -H "Content-Type: application/json" --data '{"jsonrpc":"2.0", "method":"klay_getBlockWithConsensusInfoByNumber", "params":["0x6e0431"],"id":73}' https://klaytn.testnet.blockpi.net/v1/rpc/e3541a82689c876a1576c1d627aa94453d2e96ed
+curl -H "Content-Type: application/json" --data '{"jsonrpc":"2.0","method":"klay_clientVersion","id":1}' https://klaytn.testnet.blockpi.net/v1/rpc/e3541a82689c876a1576c1d627aa94453d2e96ed
+curl -H "Content-Type: application/json" --data '{"jsonrpc":"2.0","method":"klay_clientVersion","id":1}' https://klaytn.testnet.blockpi.net/v1/rpc/e3541a82689c876a1576c1d627aa94453d2e96ed
 */
