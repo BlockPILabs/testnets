@@ -12,7 +12,7 @@ discord: https://discord.gg/xTvGVrGVZv
 
 
 ## Testnet
-* Testnet name: testnet
+* Testnet name: testnet1
 * Testnet Documentation: [public network](testnet/public-testnet/README.md)
 
 
