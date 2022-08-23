@@ -1,0 +1,3 @@
+Monitoring Guide : (Ongoing)
+
+Setup BlockPi Hypernode : https://blog.nodex.codes/blockpi-panduan-instalasi-hypernode
