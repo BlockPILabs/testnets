@@ -1,0 +1,3 @@
+content:
+    https://github.com/davaymne/blockpilabs-hypernode-klaytn-monitoring
+    https://github.com/davaymne/blockpilabs-hypernode-polygon-monitoring
