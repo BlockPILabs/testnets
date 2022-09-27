@@ -1,0 +1,14 @@
+Node Monitoring
+1) Open RCPport
+2) Create a workspace on  postman
+https://www.postman.com/
+3) Inside the workspace then in the top left click on Import and add the curl request “curl --data '{"method":"eth_syncing","params":[],"id":1,"jsonrpc":"2.0"}' -H "Content-Type: application/json" -X POST http://IP:31271/” 
+4) In the test tab add the following snippet:
+“pm.test("Klay Monitor", function () {
+    var jsonData = pm.response.json();
+    pm.expect(jsonData.data.jsonrpc).to.eql(2.0)
+    pm.expect(jsonData.data.id).to.eql(1)
+    pm.expect(jsonData.data.result).to.eql(false)
+});”
+5) Then configure the frequency of the monitor.
+ 
