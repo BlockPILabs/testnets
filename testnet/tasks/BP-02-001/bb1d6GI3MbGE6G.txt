@@ -1,0 +1,1 @@
+klaytn node block alert script: https://gist.github.com/Stakecraft/d64144d6d45f6fb47f968bc72ba34242
